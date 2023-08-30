@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-logo {
+  color: #8124e1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 55px;
+  margin: 0 auto;
+}
+.Main {
+  text-align: center;
+  margin: 150px auto;
+}
+.Main h1 {
+  font-size: 70px;
+  margin: 20px;
+}
+.Main p {
+  font-size: 19px;
+  margin: 20px;
+}
+.location {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: rgb(209, 205, 205);
+  padding: 10px;
+  color: gray;
+}
+.location span {
+  color: black;
+  cursor: pointer;
+}
+.General {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.select-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.shop {
+  width: 80%;
+}
+.each-item {
+  width: 243px;
+  border: 1px solid #cfdae8;
+  cursor: pointer;
+}
+.item-link {
+  text-decoration: none;
+  color: gray;
+}
+.each-item p {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px;
+  color: black;
+}
+.each-item span {
+  font-size: 15px;
+  margin: 5px;
+}
+.each-div img {
+  width: 243px;
+}
+.each-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.filters p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.label input {
+  cursor: pointer;
+}
+.label {
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.label input[type="checkbox"] {
+  margin: 7px 7px 7px 0;
+  width: 18px;
+  height: 18px;
+}
+.label span {
+  font-size: 15px;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 30px;
+  background-image: url("https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 12px;
+  width: 180px;
+  cursor: pointer;
+}
+
+select option {
+  font-size: 16px;
+  padding: 8px;
+}
+
+select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+.each-Item img {
+  width: 338px;
+  height: 435px;
+}
+.each-Item {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+.item-information {
   color: white;
+  font-size: 24px;
+  margin: 25px;
+  color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.item-information p {
+  margin: 15px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-information button {
+  padding: 15px 30px;
+  margin: 10px 0;
+  color: #892ae2;
+  border: 1px solid #892ae2;
+  border-radius: 8px;
+  font-size: 19px;
+  cursor: pointer;
+}
+.item-information .cart {
+  margin-left: 15px;
+  color: white;
+  border: none;
+  background-color: #892ae2;
 }
