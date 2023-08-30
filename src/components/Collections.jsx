@@ -8,7 +8,7 @@ export default function Collections() {
     <div className="collections">
       <div className="location">
         <p>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/tip-top-store" style={{ textDecoration: "none" }}>
             <span>Home</span>
           </Link>
           {location.pathname}

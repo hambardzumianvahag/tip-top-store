@@ -7,7 +7,7 @@ export default function Main() {
     <div className="Main">
       <h1>Wear Better, look better</h1>
       <p>Don't you just love being in apparel?</p>
-      <Link to="/collections">
+      <Link to="/tip-top-store/collections">
         <Button variant="contained" style={{ backgroundColor: "#8124e1" }}>
           Shop Now
         </Button>

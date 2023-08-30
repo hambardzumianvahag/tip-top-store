@@ -17,10 +17,10 @@ export default function EachItem() {
     <div>
       <div className="location">
         <p>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/tip-top-store" style={{ textDecoration: "none" }}>
             <span>Home</span>
           </Link>
-          <Link to="/collections" style={{ textDecoration: "none" }}>
+          <Link to="/tip-top-store/collections" style={{ textDecoration: "none" }}>
             <span>/{collections}</span>
           </Link>
           /{id}

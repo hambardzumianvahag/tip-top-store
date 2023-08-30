@@ -7,7 +7,10 @@ export default function Shop() {
       {data.clothes.map((item) => {
         return (
           <div key={item.id} className="each-item">
-            <Link to={`/collections/${item.id}`} className="item-link">
+            <Link
+              to={`/tip-top-store/collections/${item.id}`}
+              className="item-link"
+            >
               <img src={item.imageURL} alt="" />
               <p>{item.brand}</p>
               <span>{item.name}</span>
