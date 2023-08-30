@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tip-top-store/static/css/main.4b9e877d.css",
+    "main.js": "/tip-top-store/static/js/main.6ce40a55.js",
+    "index.html": "/tip-top-store/index.html",
+    "main.4b9e877d.css.map": "/tip-top-store/static/css/main.4b9e877d.css.map",
+    "main.6ce40a55.js.map": "/tip-top-store/static/js/main.6ce40a55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b9e877d.css",
+    "static/js/main.6ce40a55.js"
+  ]
+}
