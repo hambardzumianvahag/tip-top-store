@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import General from "./General";
 
 export default function Collections() {
-  const location = useLocation();
   return (
     <div className="collections">
       <div className="location">
@@ -11,7 +10,7 @@ export default function Collections() {
           <Link to="/tip-top-store" style={{ textDecoration: "none" }}>
             <span>Home</span>
           </Link>
-          {location.pathname}
+          /Collections
         </p>
       </div>
       <General />
