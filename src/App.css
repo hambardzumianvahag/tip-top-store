@@ -37,6 +37,8 @@
 }
 .location {
   display: flex;
+  width: 93.5%;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   background-color: rgb(209, 205, 205);
@@ -168,4 +170,49 @@ select option:checked {
   color: white;
   border: none;
   background-color: #892ae2;
+}
+.icon-link,
+.logo-link {
+  text-decoration: none;
+  color: black;
+}
+#basic-button {
+  color: black;
+}
+.account-menu {
+  padding: 5px;
+  cursor: default;
+}
+.account-menu button {
+  padding: 5px 15px;
+  margin: 8px;
+  font-size: 16px;
+  color: #892ae2;
+  border: 1px solid #892ae2;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 50px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #cfdae8;
+}
+.account-button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.form form{
+  width: 100%;
 }

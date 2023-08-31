@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link,  useParams } from "react-router-dom";
 import data from "../data.json";
 
 export default function EachItem() {
@@ -23,7 +23,7 @@ export default function EachItem() {
           >
             <span>/Collections</span>
           </Link>
-          /{productId}
+          /{product.name}
         </p>
       </div>
       <div className="each-Item" key={product.id}>
