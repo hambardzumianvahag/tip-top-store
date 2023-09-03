@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tip-top-store/static/css/main.88d2aab5.css",
-    "main.js": "/tip-top-store/static/js/main.27c90a2b.js",
+    "main.css": "/tip-top-store/static/css/main.d0164836.css",
+    "main.js": "/tip-top-store/static/js/main.72059901.js",
     "index.html": "/tip-top-store/index.html",
-    "main.88d2aab5.css.map": "/tip-top-store/static/css/main.88d2aab5.css.map",
-    "main.27c90a2b.js.map": "/tip-top-store/static/js/main.27c90a2b.js.map"
+    "main.d0164836.css.map": "/tip-top-store/static/css/main.d0164836.css.map",
+    "main.72059901.js.map": "/tip-top-store/static/js/main.72059901.js.map"
   },
   "entrypoints": [
-    "static/css/main.88d2aab5.css",
-    "static/js/main.27c90a2b.js"
+    "static/css/main.d0164836.css",
+    "static/js/main.72059901.js"
   ]
 }
