@@ -8,9 +8,12 @@ export default function Wishlist() {
   const findProductById = (productId) => {
     return data.clothes.find((product) => product.id === productId);
   };
-  const addToCartAndRemove = (productId) => {
+  const addToCartAndRemove = (e, productId) => {
+    e.preventDefault();
     if (!cart.includes(productId)) {
       addToCart(productId);
+      removeFromWishlist(productId);
+    } else if (cart.includes(productId)) {
       removeFromWishlist(productId);
     }
   };
@@ -66,7 +69,7 @@ export default function Wishlist() {
                   </div>
                   <button
                     className="to-cart"
-                    onClick={() => addToCartAndRemove(productId)}
+                    onClick={(e) => addToCartAndRemove(e, productId)}
                   >
                     Move to Cart
                   </button>
