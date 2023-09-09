@@ -5,12 +5,12 @@ import { LoginContext } from "./Context/LoginContext";
 import { Button, TextField } from "@mui/material";
 
 export default function SignIn() {
-  const { setLogin, setPassword, login, password } =
-    useContext(LoginContext);
+  const { setLogin, setPassword, login, password } = useContext(LoginContext);
   const myLogin = localStorage.getItem("login");
   const myPassword = localStorage.getItem("password");
   const [loginError, setLoginError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -40,10 +40,12 @@ export default function SignIn() {
       setLogin("");
       setPassword("");
       navigate("/tip-top-store/collections");
-      localStorage.setItem('status', 'ok')
+      localStorage.setItem("status", "ok");
     }
   };
-
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
+  };
   return (
     <div>
       <div className="location">
@@ -69,7 +71,7 @@ export default function SignIn() {
             sx={{ width: "100%", marginBottom: "1rem" }}
           />
           <TextField
-            type="password"
+            type={showPassword ? "text" : "password"}
             label="Password"
             value={password}
             onChange={(e) => {
@@ -80,6 +82,10 @@ export default function SignIn() {
             className="text-field"
             sx={{ width: "100%", marginBottom: "1rem" }}
           />
+          <label className="show-pass" onClick={togglePasswordVisibility}>
+            <input type="checkbox" />{" "}
+            <span onClick={togglePasswordVisibility}>{showPassword ? "Hide Password" : "Show Password"}</span>
+          </label>
           <Button
             type="submit"
             variant="contained"

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HeaderLogo from "@mui/icons-material/ChangeHistory";
 import { TextField, Button } from "@mui/material";
 import { LoginContext } from "./Context/LoginContext";
@@ -11,6 +11,8 @@ export default function SignUp() {
   const [nameError, setNameError] = useState("");
   const [loginError, setLoginError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const validateEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -54,9 +56,12 @@ export default function SignUp() {
       setLogin("");
       setName("");
       setPassword("");
+      navigate("/tip-top-store/signin");
     }
   };
-
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevValue) => !prevValue);
+  };
   return (
     <div className="signup-container">
       <div className="location">
@@ -95,7 +100,7 @@ export default function SignUp() {
           />
           <br />
           <TextField
-            type="password"
+            type={showPassword ? "text" : "password"}
             label="Password"
             value={password}
             onChange={(e) => {
@@ -106,6 +111,12 @@ export default function SignUp() {
             sx={{ width: "100%", marginBottom: "1rem" }}
           />
           <br />
+          <label onClick={togglePasswordVisibility} className="show-pass">
+            <input type="checkbox" />{" "}
+            <span onClick={togglePasswordVisibility}>
+              {showPassword ? "Hide Password" : "Show Password"}
+            </span>
+          </label>
           <Button
             type="submit"
             variant="contained"
