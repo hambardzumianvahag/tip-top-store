@@ -29,6 +29,12 @@ export default function Wishlist() {
           <Link to="/tip-top-store" style={{ textDecoration: "none" }}>
             <span>Home</span>
           </Link>
+          <Link
+            to="/tip-top-store/collections"
+            style={{ textDecoration: "none" }}
+          >
+            <span>/Collections</span>
+          </Link>
           /Wishlist
         </p>
       </div>
@@ -47,6 +53,7 @@ export default function Wishlist() {
 
             return (
               <Link
+                key={productId}
                 to={`/tip-top-store/collections/${productId}`}
                 style={{
                   textDecoration: "none",
@@ -54,9 +61,9 @@ export default function Wishlist() {
                   fontWeight: "bold",
                 }}
               >
-                <div key={productId} className="wishlist-item">
+                <div className="wishlist-item">
                   <span
-                    class="x-symbol"
+                    className="x-symbol"
                     onClick={(e) => handleRemoveFromWishlist(e, productId)}
                   >
                     &#10006;
